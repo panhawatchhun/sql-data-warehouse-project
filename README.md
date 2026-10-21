@@ -1,2 +1,10 @@
 # Data Warehouse Project and Analytics Project
-Build a data warehouse with SQL Server, including ETL processes, data modeling and analytics.
+
+Welcome to the ** Data Warehouse and Analytics Project ** repository!
+This project illustrate data warehousing and analytics solution, from building a data warehouse to generating actionable insights.
+
+-----
+
+## Project Requirements:
+
+
