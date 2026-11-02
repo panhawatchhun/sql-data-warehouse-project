@@ -26,7 +26,7 @@ Develop SQL-based analytics to deliver detailed insights into: **1. Customer Beh
 
 These insights empower stakeholders with key business metrics which support business decisions.
 
-### License:
+## License:
 
 This project is licensed under MIT License.
 
