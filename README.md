@@ -5,12 +5,12 @@ This project illustrate data warehousing and analytics solution, from building a
 
 ---
 
-## Project Requirements:
+## 1. Project Requirements:
 
-### Objective
+### 1.1 Objective
 Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
 
-### Specification:
+### 1.2 Specification:
 - **Data Source**: Import data from source system in CSV files.
 - **Data Quality**: Cleanse and resolve data quality issues before to analysis.
 - **Integration**: Combine both sources into a single data model for analytical queries.
@@ -19,7 +19,7 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 
 ---
 
-### BI: Analytics & Reporting (Data Analytics)
+### 1.3 BI: Analytics & Reporting (Data Analytics)
 
 #### Objective
 Develop SQL-based analytics to deliver detailed insights into: **1. Customer Behavior**, **2. Product Performance**, **3. Sales Trends**.
@@ -28,9 +28,11 @@ These insights empower stakeholders with key business metrics which support busi
 
 ---
 
-## License:
-
+## 2. License:
 This project is licensed under MIT License.
 
+---
+## 3. About Me
+I am a new learner in SQL.
 
 
