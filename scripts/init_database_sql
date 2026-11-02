@@ -16,18 +16,18 @@ USE master;
 GO
 
 -- Drop and recreate the 'DataWarehouseAnalytics' database
-IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'DataWarehouseAnalytics')
+IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'DataWarehouse')
 BEGIN
-    ALTER DATABASE DataWarehouseAnalytics SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
-    DROP DATABASE DataWarehouseAnalytics;
+    ALTER DATABASE DataWarehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+    DROP DATABASE DataWarehouse;
 END;
 GO
 
 -- Create the 'DataWarehouseAnalytics' database
-CREATE DATABASE DataWarehouseAnalytics;
+CREATE DATABASE DataWarehouse;
 GO
 
-USE DataWarehouseAnalytics;
+USE DataWarehouse;
 GO
 
 -- Create Schemas
@@ -81,7 +81,7 @@ TRUNCATE TABLE gold.dim_customers;
 GO
 
 BULK INSERT gold.dim_customers
-FROM 'C:\sql\sql-data-analytics-project\datasets\csv-files\gold.dim_customers.csv'
+FROM 'D:\Online Course\Udemy - The Complete SQL Bootcamp (30 Hours) Go from Zero to Hero\sql-data-analytics-project\datasets\flat-files\dim_customers.csv'
 WITH (
 	FIRSTROW = 2,
 	FIELDTERMINATOR = ',',
@@ -93,7 +93,7 @@ TRUNCATE TABLE gold.dim_products;
 GO
 
 BULK INSERT gold.dim_products
-FROM 'C:\sql\sql-data-analytics-project\datasets\csv-files\gold.dim_products.csv'
+FROM 'D:\Online Course\Udemy - The Complete SQL Bootcamp (30 Hours) Go from Zero to Hero\sql-data-analytics-project\datasets\flat-files\dim_products.csv'
 WITH (
 	FIRSTROW = 2,
 	FIELDTERMINATOR = ',',
@@ -105,11 +105,10 @@ TRUNCATE TABLE gold.fact_sales;
 GO
 
 BULK INSERT gold.fact_sales
-FROM 'C:\sql\sql-data-analytics-project\datasets\csv-files\gold.fact_sales.csv'
+FROM 'D:\Online Course\Udemy - The Complete SQL Bootcamp (30 Hours) Go from Zero to Hero\sql-data-analytics-project\datasets\flat-files\fact_sales.csv'
 WITH (
 	FIRSTROW = 2,
 	FIELDTERMINATOR = ',',
 	TABLOCK
 );
 GO
-
